@@ -1,18 +1,19 @@
 #include "main.h"
+#include "string.h"
+
 /**
- * print_rev - reverse
- * Description: task4
- * @s: p to char
- * Return: void
- */
+ * print_rev - prints a string in reverse
+ * @s: the string
+**/
+
 void print_rev(char *s)
 {
-	int i, length;
+	int i;
 
-	for (length = 0; s[length] != '\0'; length++)
+	for (i = strlen(s) - 1; i >= 0; i--)
 	{
-	}
-	for (i = length; i >= 0; i--)
 		_putchar(s[i]);
+	}
+
 	_putchar('\n');
 }
