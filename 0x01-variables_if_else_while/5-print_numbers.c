@@ -1,17 +1,19 @@
 #include <stdio.h>
+
 /**
- * main - Entry point
- * Description: 'Task'
- * @void: The main function takes no parameters
- * Return: Always 0 (Success)
- */
+ * main - prints all single digit numbers of base 10 starting from 0.
+ * Return: 0
+**/
+
 int main(void)
 {
-	int i;
+	char i;
 
-	for (i = 0; i < 10; i++)
-		printf("%d", i);
-	printf("\n");
+	for (i = '0'; i <= '9'; i++)
+	{
+		putchar(i);
+	}
+	putchar('\n');
 
 	return (0);
 }

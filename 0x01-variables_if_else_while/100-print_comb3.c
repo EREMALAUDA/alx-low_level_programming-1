@@ -1,25 +1,29 @@
 #include <stdio.h>
+
 /**
- * main - Entry point
- * Description: 'Task'
- * @void: The main function takes no parameters
- * Return: Always 0 (Success)
- */
+ * main - prints all possible different combinations of two digits.
+ * Return: 0
+**/
+
 int main(void)
 {
-	int n;
-	int m;
+	int i, j;
 
-	for (n = 48; n <= 57; n++)
+	for (i = '0'; i <= '9'; i++)
 	{
-		for (m = n + 1; m <= 57; m++)
+		for (j = '0'; j <= '9'; j++)
 		{
-			putchar(n);
-			putchar(m);
-			if (m == 57 && n == m - 1)
-				break;
-			putchar(',');
-			putchar(' ');
+			if (i != j && i < j)
+			{
+				putchar(i);
+				putchar(j);
+
+				if (i != '8' || j != '9')
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
 		}
 	}
 	putchar('\n');

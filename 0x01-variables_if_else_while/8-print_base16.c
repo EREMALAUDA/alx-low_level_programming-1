@@ -1,20 +1,24 @@
 #include <stdio.h>
+
 /**
- * main - Entry point
- * Description: 'Task'
- * @void: The main function takes no parameters
- * Return: Always 0 (Success)
- */
+ * main - prints all the numbers of base 16 in lowercase.
+ * Return: 0
+**/
+
 int main(void)
 {
-	int n;
+	char i;
 
-	for (n = 48; n <= 102; n++)
+	for (i = '0'; i <= '9'; i++)
 	{
-		if (n == 58)
-			n += 39;
-		putchar(n);
+		putchar(i);
 	}
+
+	for (i = 'a'; i <= 'f'; i++)
+	{
+		putchar(i);
+	}
+
 	putchar('\n');
 
 	return (0);

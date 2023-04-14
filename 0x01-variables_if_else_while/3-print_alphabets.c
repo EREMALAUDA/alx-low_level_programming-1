@@ -1,18 +1,24 @@
 #include <stdio.h>
+
 /**
- * main - Entry point
- * Description: 'Task.2'
- * @void: The main function takes no parameters
- * Return: Always 0 (Success)
- */
+ * main - prints the alphabet in lowercase, and then in uppercase.
+ * Return: 0
+**/
+
 int main(void)
 {
-	char c;
+	char i;
 
-	for (c = 'a'; c <= 'z'; c++)
-		putchar(c);
-	for (c = 'A'; c <= 'Z'; c++)
-		putchar(c);
+	for (i = 'a'; i <= 'z'; i++)
+	{
+		putchar(i);
+	}
+
+	for (i = 'A'; i <= 'Z'; i++)
+	{
+		putchar(i);
+	}
+
 	putchar('\n');
 
 	return (0);

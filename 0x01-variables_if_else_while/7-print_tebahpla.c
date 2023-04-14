@@ -1,16 +1,19 @@
 #include <stdio.h>
+
 /**
- * main - Entry point
- * Description: 'Task'
- * @void: The main function takes no parameters
- * Return: Always 0 (Success)
- */
+ * main - prints the lowercase alphabet in reverse.
+ * Return: 0
+**/
+
 int main(void)
 {
-	char c;
+	char i;
 
-	for (c = 'z'; c >= 'a'; c--)
-		putchar(c);
+	for (i = 'z'; i >= 'a'; i--)
+	{
+		putchar(i);
+	}
 	putchar('\n');
+
 	return (0);
 }

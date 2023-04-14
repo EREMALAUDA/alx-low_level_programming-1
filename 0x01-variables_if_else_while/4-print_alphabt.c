@@ -1,20 +1,22 @@
 #include <stdio.h>
+
 /**
- * main - Entry point
- * Description: 'Task.2'
- * @void: The main function takes no parameters
- * Return: Always 0 (Success)
- */
+ * main - prints the alphabet in lowercase except q and e.
+ * Return: 0
+**/
+
 int main(void)
 {
-	char c;
+	char i;
 
-	for (c = 'a'; c <= 'z'; c++)
+	for (i = 'a'; i <= 'z'; i++)
 	{
-		if (c == 'e' || c == 'q')
-			continue;
-		putchar(c);
+		if (i != 'e' && i != 'q')
+		{
+			putchar(i);
+		}
 	}
 	putchar('\n');
+
 	return (0);
 }

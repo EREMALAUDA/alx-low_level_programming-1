@@ -1,21 +1,23 @@
 #include <stdio.h>
+
 /**
- * main - Entry point
- * Description: 'Task'
- * @void: The main function takes no parameters
- * Return: Always 0 (Success)
- */
+ * main - prints all possible combinations of single-digit numbers.
+ * Return: 0
+**/
+
 int main(void)
 {
-	int n;
+	int i;
 
-	for (n = 48; n <= 57; n++)
+	for (i = '0'; i <= '9'; i++)
 	{
-		putchar(n);
-		if (n == 57)
-			break;
-		putchar(',');
-		putchar(' ');
+		putchar(i);
+
+		if (i != '9')
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
 	putchar('\n');
 

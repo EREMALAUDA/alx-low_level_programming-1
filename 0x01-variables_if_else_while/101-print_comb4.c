@@ -1,29 +1,29 @@
 #include <stdio.h>
+
 /**
- * main - Entry point
- * Description: 'Task'
- * @void: The main function takes no parameters
- * Return: Always 0 (Success)
- */
+ * main - prints all possible different combinations of three digits.
+ * Return: 0
+**/
+
 int main(void)
 {
-	int x;
-	int y;
-	int z;
+	int i, j, k;
 
-	for (x = 48; x <= 57; x++)
+	for (i = '0'; i <= '9'; i++)
 	{
-		for (y = x + 1; y <= 57; y++)
+		for (j = i + 1; j <= '9'; j++)
 		{
-			for (z = y + 1; z <= 57; z++)
+			for (k = j + 1; k <= '9'; k++)
 			{
-				putchar(x);
-				putchar(y);
-				putchar(z);
-				if (x == y - 1 && y == z - 1 && z == 57)
-					continue;
-				putchar(',');
-				putchar(' ');
+				putchar(i);
+				putchar(j);
+				putchar(k);
+
+				if (i != '7' || j != '8' || k != '9')
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
 		}
 	}
